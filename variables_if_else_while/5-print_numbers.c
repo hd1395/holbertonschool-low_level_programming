@@ -7,9 +7,9 @@
  */
 int main(void)
 {
-int i;
-for (i = 48; i <= 57; i++)
-putchar(i);
+char c;
+for (c = '0'; c <= '9'; c++)
+putchar(c);
 putchar('\n');
 return (0);
 }
