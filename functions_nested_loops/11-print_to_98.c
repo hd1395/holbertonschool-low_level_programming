@@ -18,6 +18,6 @@ printf("%d", n);
 do {
 n += direction;
 printf(", %d", n);
-} while (n != 98)
+} while (n != 98);
 printf("\n");
 }
