@@ -15,6 +15,7 @@ for (r = 0; r <= 9; r++)
 {
 for (c = 0; c <= 9; c++)
 {
+if (r * c > 0)
 _putchar(',');
 print_num(r * c);
 }
