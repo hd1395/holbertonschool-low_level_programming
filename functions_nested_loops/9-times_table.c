@@ -13,7 +13,6 @@ int r;
 int c;
 for (r = 0; r <= 9; r++)
 {
-_putchar('0' + r);
 for (c = 0; c <= 9; c++)
 {
 _putchar(',');
@@ -22,6 +21,14 @@ print_num(r * c);
 _putchar('\n');
 }
 }
+/**
+ * print_num - function that prints the desired number format as requested
+ * @n: number to print
+ *
+ * Return: void
+ *
+ */
+
 void print_num(int n)
 {
 _putchar(' ');
