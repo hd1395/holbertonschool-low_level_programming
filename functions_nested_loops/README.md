@@ -19,3 +19,4 @@ Write a function that prints the sign of a number.
     Returns -1 and prints - if n is less than zero
 
 6- Write a function that computes the absolute value of an integer.
+Write a function that prints the last digit of a number.
