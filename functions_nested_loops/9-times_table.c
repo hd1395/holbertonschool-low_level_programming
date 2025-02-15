@@ -13,10 +13,11 @@ int r;
 int c;
 for (r = 0; r <= 9; r++)
 {
-for (c = 0; c <= 9; c++)
+_putchar('0');
+for (c = 1; c <= 9; c++)
 {
-if (r * c > 0)
 _putchar(',');
+_putchar(' ');
 print_num(r * c);
 }
 _putchar('\n');
@@ -32,10 +33,15 @@ _putchar('\n');
 
 void print_num(int n)
 {
+if (n < 10)
+{
 _putchar(' ');
-if (n / 10 > 0)
-_putchar(48 + n / 10);
-else
-_putchar(' ');
-_putchar(48 + n % 10);
+_putchar('0' + n);
 }
+else
+{
+_putchar('0' + n / 10);
+_putchar('0' + n % 10);
+}
+}
+
