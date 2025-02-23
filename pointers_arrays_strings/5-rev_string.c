@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * swap_int - swaps the value of two integers.
- * @a: the first number.
- * @b: the second number.
+ * swap_char - swaps the value of two characters.
+ * @a: the first character.
+ * @b: the second character.
  *
  */
 
@@ -47,7 +47,7 @@ str_len = _strlen(s);
 s1 +=  str_len - 1;
 while (s < s1)
 {
-swap_char(s,s1)
+swap_char(s, s1);
 s++;
 s1--;
 }
