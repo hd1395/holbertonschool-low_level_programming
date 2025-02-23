@@ -1,11 +1,10 @@
-#include "main.h"
 #include <stdio.h>
 /**
- * print_fizz_buzz - print_square - prints square
+ * main - print_square - prints square
  *
  */
 
-void print_fizz_buzz(void)
+int main()
 {
 int i;
 for (i = 1 ; i <= 100 ; i++)
@@ -19,5 +18,6 @@ printf("Buzz ");
 else
 printf("%d ", i);
 }
-_putchar('\n');
+printf("\n");
+ return (0);
 }
