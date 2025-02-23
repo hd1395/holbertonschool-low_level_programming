@@ -1,4 +1,4 @@
-1- Write a function that takes a pointer to an int as parameter and updates the value it points to to 98.
+0- Write a function that takes a pointer to an int as parameter and updates the value it points to to 98.
 
     Prototype: void reset_to_98(int *n);
 
@@ -10,7 +10,7 @@
 
     Prototype: int _strlen(char *s);
 
-Write a function that prints a string, followed by a new line, to stdout.
+3- Write a function that prints a string, followed by a new line, to stdout.
 
     Prototype: void _puts(char *str);
 
