@@ -14,10 +14,10 @@ str_len = _strlen(s);
 s +=  str_len - 1;
 while (str_len > 0)
 {
-putchar(*s);
+_putchar(*s);
 s--;
 str_len--;
 }
-putchar('\n');
+_putchar('\n');
 }
 
