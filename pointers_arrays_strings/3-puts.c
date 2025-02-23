@@ -3,7 +3,7 @@
 
 /**
  * _puts - prints string.
- * @s: String to print.
+ * @str: String to print.
  *
  *
  */
