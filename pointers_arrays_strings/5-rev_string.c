@@ -44,7 +44,7 @@ void rev_string(char *s)
 char *s1;
 int str_len;
 str_len = _strlen(s);
-s1 +=  str_len - 1;
+s1 = s + str_len - 1;
 while (s < s1)
 {
 swap_char(s, s1);
