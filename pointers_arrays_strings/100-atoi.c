@@ -17,10 +17,7 @@ number = 0;
 while (*s != '\0')
 {
 if (*s == 45)
-{
 sign *= -1;
-s++;
-}
 if (number && (*s > '9' || *s < '0'))
 break;
 
