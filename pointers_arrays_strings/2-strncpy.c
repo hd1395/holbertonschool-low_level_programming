@@ -19,7 +19,7 @@ _dest = dest;
 for (i = 0; i < n; i++)
 {
 *dest = *src;
-if (len && *s != '\0')
+if (len && *src != '\0')
 src++;
 dest++;
 }
