@@ -15,12 +15,11 @@ char *_dest;
 int i;
 int len;
 len = _strlen(src);
-if (len == 0)
-return (dest);
 _dest = dest;
 for (i = 0; i < n; i++)
 {
 *dest = *src;
+if (len)
 src++;
 dest++;
 }
