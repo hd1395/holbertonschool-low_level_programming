@@ -13,6 +13,7 @@ char *ptr;
 ptr = str;
 if (*ptr <= 'z' && *ptr >= 'a')
 *ptr += 32;
+ptr++;
 while (*ptr)
 {
 if (*ptr <= 'z' && *ptr >= 'a')
