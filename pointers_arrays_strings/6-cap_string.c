@@ -9,19 +9,18 @@
 
 char *cap_string(char *str)
 {
-char *ptr1;
-char *ptr2;
-ptr1 = str + 1;
-ptr2 = str;
-while (*ptr1)
+char *ptr;
+ptr = str;
+while (*ptr)
 {
-if ((*ptr2 == '\n' || *ptr2 == ',' || *ptr2 == ';' || *ptr2 == '.'
-|| *ptr2 == '!' || *ptr2 == '?' || *ptr2 == '"' || *ptr2 == '\t'
-|| *ptr2 == ' ' || *ptr2 == '(' || *ptr2 == ')' || *ptr2 == '{'
-|| *ptr2 == '}') && (*ptr1 <= 'z' && *ptr1 >= 'a'))
-*ptr1 -= 32;
-ptr2 = ptr1;
-ptr1++;
+if (*ptr <= 'z' && *ptr >= 'a')
+if (*(ptr - 1) == '\n' || *(ptr - 1) == ',' || *(ptr - 1) == ';'
+|| *(ptr - 1) == '.' || *(ptr - 1) == '!' || *(ptr - 1) == '?'
+|| *(ptr - 1) == '"' || *(ptr - 1) == '\t' || *(ptr - 1) == ' '
+|| *(ptr - 1) == '(' || *(ptr - 1) == ')' || *(ptr - 1) == '{'
+|| *(ptr - 1) == '}')
+*ptr -= 32;
+ptr++;
 }
 return (str);
 }
