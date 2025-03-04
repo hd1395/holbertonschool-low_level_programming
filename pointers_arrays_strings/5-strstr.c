@@ -16,6 +16,7 @@ char *_strstr(char *haystack, char *needle)
 {
 char *_s, *_n;
 int found;
+found = 0;
 while (*haystack)
 {
 _n = needle;
