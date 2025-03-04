@@ -1,6 +1,27 @@
 #include "main.h"
 #include <stddef.h>
 #include <limits.h>
+
+
+/**
+ * starts_with - check if haystack starts with needle
+ * @haystack: string to be searched.
+ * @needle: string to search
+ *
+ * Return: pointer to haystack if it starts with needle, otherwise NULL
+ */
+char *starts_with(char *haystack, char *needle)
+{
+char *p;
+p = haystack;
+while (*needle)
+{
+if (*haystack++ != *needle++)
+return (NULL);
+}
+return (p);
+}
+
 /**
  * _strstr - finds the first occurrence of the substring needle in
  *           the string haystack.
@@ -9,35 +30,16 @@
  *
  * Return: pointer to the beginning of located suvbstring
  *         NULL if the substring is not found.
- *
  */
 
 char *_strstr(char *haystack, char *needle)
 {
-char *_s, *_n;
-int found;
-found = 0;
+char *p;
 while (*haystack)
 {
-_n = needle;
-if (*_n == *haystack)
-{
-found = 1;
-_s = haystack;
-while (*_n)
-{
-if (*_n != *_s)
-{
-found = 0;
-break;
+p = starts_with(haystack++, needle);
+if (p)
+return (p);
 }
-_n++;
-_s++;
-}
-}
-if (found)
-break;
-haystack++;
-}
-return (haystack);
+return (NULL);
 }
