@@ -8,7 +8,7 @@
  * Return: 0
  */
 
-int main (int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 int i;
 char *endptr;
@@ -19,9 +19,11 @@ if (argc == 1)
 printf("0\n");
 return (0);
 }
-for (i = 1; i < argc; i++){
+for (i = 1; i < argc; i++)
+{
 num = strtol(argv[i], &endptr, 10);
-if (endptr == argv[i] || *endptr != '\0' ) {
+if (endptr == argv[i] || *endptr != '\0')
+{
 printf("Error\n");
 return (1);
 }
