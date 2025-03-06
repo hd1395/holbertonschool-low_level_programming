@@ -1,0 +1,15 @@
+#include "main.h"
+#include <stdio.h>
+/**
+ * print_diagsums - prints the sum of the two diagonals of
+ * a square matrix of integers..
+ * @a: array of integers.
+ * @size: size of the array
+ *
+ *
+ */
+
+void set_string(char **s, char *to)
+{
+s = &to;
+}
