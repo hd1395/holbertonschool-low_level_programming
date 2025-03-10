@@ -26,7 +26,7 @@ char *s;
 if (!str)
 return (NULL);
 len = str_len(str);
-s = malloc(sizeof(char) * len);
+ s = malloc(sizeof(char) * (len + 1));
 if (!s)
 return (NULL);
 for (i = 0; i < len; i++)
