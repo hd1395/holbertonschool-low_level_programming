@@ -8,6 +8,8 @@
  */
 int str_len(char *s)
 {
+if (!s)
+return (0);
 if (!*s)
 return (0);
 return (1 + str_len(s + 1));
@@ -32,7 +34,7 @@ if (!s)
 return (NULL);
 for (i = 0; i < s1_len; i++)
 s[i] = *(s1++);
-for (i = s1_len; i <= s1_len + s2_len; i++)
+for (i = s1_len; i < s1_len + s2_len; i++)
 s[i] = *(s2++);
 s[s1_len + s2_len + 1] = '\0';
 return (s);
