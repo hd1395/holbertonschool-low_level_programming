@@ -47,7 +47,7 @@ if (!s)
 return (0);
 for (i = 0; i < s1_len; i++)
 s[i] = *(s1++);
-for (i = s1_len; i <= s1_len + min(s2_len, n); i++)
+for (i = s1_len; i < s1_len + min(s2_len, n); i++)
 s[i] = *(s2++);
 s[s1_len + min(s2_len, n) + 1] = '\0';
 return (s);
