@@ -20,7 +20,12 @@ for (i = 0; i < height; i++)
 {
 a[i] = malloc(width * sizeof(int));
 if (!a[i])
+{
+for (i = i - 1; i >= 0; i--)
+free(a[i]);
+free(a);
 return (NULL);
+}
 for (j = 0; j < width; j++)
 a[i][j] = 0;
 }
