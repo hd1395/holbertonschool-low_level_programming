@@ -11,7 +11,7 @@
  */
 unsigned int str_len(char *s)
 {
-if (!*s)
+if (!s || !*s)
 return (0);
 return (1 + str_len(s + 1));
 }
