@@ -18,7 +18,7 @@ return (NULL);
 p = malloc(nmemb * size);
 if (!p)
 return (NULL);
-for (i = 0; i < nmemb; i++)
-*(p + i) = 0;;
+for (i = 0; i < nmemb * size; i++)
+*(p + i) = 0;
 return (p);
 }
