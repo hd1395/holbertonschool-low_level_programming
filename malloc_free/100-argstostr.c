@@ -58,17 +58,16 @@ int i;
 if (!ac || !av)
 return (NULL);
 s = "";
-s = str_concat(s, av[0]);
-
-for (i = 1; i < ac; i++)
+old_s = s;
+for (i = 0; i < ac; i++)
 {
+s = str_concat(s, av[i]);
+if (i > 0)
+free(old_s);
 old_s = s;
 s = str_concat(s, "\n");
 free(old_s);
 old_s = s;
-s = str_concat(s, av[i]);
-free(old_s);
 }
-s[str_len(s)] = '\n';
 return (s);
 }
