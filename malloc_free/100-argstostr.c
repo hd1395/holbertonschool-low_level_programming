@@ -53,14 +53,17 @@ return (s);
  */
 char *argstostr(int ac, char **av)
 {
-char *s;
+  char *s, *old_s;
 int i;
 if (!ac || !av)
 return(NULL);
 s = "";
 for (i = 0; i < ac; i++)
 {
-s = str_concat(str_concat(s, av[i]), "\n");
+s = str_concat(s, av[i]);
+old_s = s;
+s = str_concat(s, "\n");
+free(old_s);
 }
 return (s);
 }
