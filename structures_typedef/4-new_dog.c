@@ -1,6 +1,7 @@
 #include "dog.h"
 #include <stddef.h>
 #include <stdlib.h>
+#include <string.h>
 /**
  * _strcpy - Copy string src to dest.
  * @dest: Destination string.
@@ -51,22 +52,22 @@ d = malloc(sizeof(dog_t));
 if (!d)
 return (NULL);
 len = str_len(name);
-d->name = malloc(len * sizeof(char));
+d->name = malloc((len + 1) * sizeof(char));
 if (!d->name)
 {
 free(d);
 return (NULL);
 }
-d->name = _strcpy(d->name, name);
+_strcpy(d->name, name);
 len = str_len(owner);
-d->owner = malloc(len * sizeof(char));
+d->owner = malloc((len + 1) * sizeof(char));
 if (!d->owner)
 {
 free(d);
 free(d->name);
 return (NULL);
 }
-d->owner = _strcpy(d->owner, owner);
+_strcpy(d->owner, owner);
 d->age = age;
 return (d);
 }
