@@ -53,10 +53,10 @@ return (s);
  */
 char *argstostr(int ac, char **av)
 {
-  char *s, *old_s;
+char *s, *old_s;
 int i;
 if (!ac || !av)
-return(NULL);
+return (NULL);
 s = "";
 for (i = 0; i < ac; i++)
 {
