@@ -55,6 +55,8 @@ char *argstostr(int ac, char **av)
 {
 char *s;
 int i;
+if (!ac || !av)
+return(NULL);
 s = "";
 for (i = 0; i < ac; i++)
 {
