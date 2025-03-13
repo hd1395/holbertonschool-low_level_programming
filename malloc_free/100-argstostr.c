@@ -69,5 +69,6 @@ old_s = s;
 s = str_concat(s, av[i]);
 free(old_s);
 }
+s[str_len] = '\n';
 return (s);
 }
