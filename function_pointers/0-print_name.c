@@ -1,4 +1,4 @@
-#include "main.h"
+#include "function_pointers.h"
 #include <stdio.h>
 
 /**
@@ -23,7 +23,5 @@ _putchar('\n');
  */
 void print_name(char *name, void (*f)(char *))
 {
-void (*fptr)(char *);
-fptr = printname;
-fptr(name);
+f(name);
 }
