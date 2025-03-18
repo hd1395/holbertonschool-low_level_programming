@@ -39,4 +39,5 @@ break;
 }
 i++;
 }
+printf("\n");
 }
