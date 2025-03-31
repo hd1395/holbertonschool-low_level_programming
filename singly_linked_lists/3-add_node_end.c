@@ -37,7 +37,7 @@ printf("Error\n");
 return (NULL);
 }
 new_node->str = strdup(str);
-new_node->len = strlen(str);
+new_node->len = _strlen(str);
 new_node->next = NULL;
 while (tmp && tmp->next)
 tmp = tmp->next;
