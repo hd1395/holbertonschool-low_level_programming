@@ -23,11 +23,15 @@ return (NULL);
 }
 new_node->n = n;
 new_node->next = NULL;
+new_node->prev = NULL;
 while (tmp && tmp->next)
 tmp = tmp->next;
 if (!tmp)
 *head = new_node;
 else
+{
 tmp->next = new_node;
+new_node->prev = tmp;
+}
 return (new_node);
 }
