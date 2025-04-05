@@ -18,7 +18,7 @@ char *buffer;
 buffer = malloc(sizeof(char) * 1024);
 if (buffer == NULL)
 {
-dprintf(STDERR_FILENO,"Error: Can't write to %s\n", file);
+dprintf(STDERR_FILENO, "Error: Can't write to %s\n", file);
 exit(99);
 }
 return (buffer);
@@ -78,7 +78,7 @@ exit(98);
 w = write(to, buffer, r);
 if (to == -1 || w == -1)
 {
-dprintf(STDERR_FILENO,"Error: Can't write to %s\n", argv[2]);
+dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 free(buffer);
 exit(99);
 }
